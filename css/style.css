@@ -1,0 +1,190 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+html, body {
+    box-sizing: border-box;
+}
+
+:before,
+:after {
+    box-sizing: inherit;
+}
+
+a:hover {
+    cursor: pointer;
+}
+
+.wrapper {
+    margin: 0 auto;
+    font-family: 'Lato', sans-serif;
+    font-size: 18px;
+    background-color: rgb(255, 255, 255);
+}
+
+.site-header {
+    display: flex;
+    background-color: rgb(52, 102, 103);
+    height: 3em;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo img {
+    width: 7em;
+    height: auto;
+    margin-top: 0.5em;
+    margin-left: 2em;
+    margin-right: 2em;
+}
+
+.site-nav {
+    display: flex;
+    justify-content: space-between;
+}
+
+.site-nav ul {
+    list-style: none;
+}
+
+.trigger {
+    display: flex;
+}
+
+.trigger a {
+    padding-right: 2em;
+    text-decoration: none;
+    color: rgb(204, 204, 204);
+}
+
+.site-nav-login-register {
+    padding-left: 5em;
+}
+
+.site-nav-login-register a {
+    text-decoration: none;
+    color: rgb(255, 204, 153);
+    align-items: flex-end;
+}
+
+.site-title {
+    text-decoration: none;
+}
+
+.site-nav input {
+    display: none;
+}
+
+.site-nav label {
+    display: none;
+}
+
+.page-content {
+    display: flex;
+}
+
+.presentation {
+    color: rgb(101, 101, 101);
+    font-family: Lato serif;
+    font-size: 1.5em;
+    width: 50%;
+    text-align: center;
+    padding: 2em;
+}
+
+.presentation-heading {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 2em;
+}
+
+.presentation img {
+    width: 2em;
+    height: auto;
+    padding: 2em;
+}
+
+.cover-image img {
+    width: 100%;
+    margin: 2em;
+}
+
+.portfolio-buttion {
+    width: 12em;
+    height: 3em;
+    background-color: rgb(153, 204, 204);
+}
+
+@media screen and (max-width: 900px) {
+    * {
+        font-size: 16px;
+    }
+
+    .site-header {
+        display: block;
+    }
+
+    .trigger {
+        display: block;
+    }
+
+    .site-nav {
+        display: block;
+        padding: 0;
+        width: 100%;
+    }
+
+    .site-nav a {
+        display: block;
+        position: relative;
+        text-align: left;
+        padding: 0;
+        border-bottom: 0.07em solid rgb(255, 255, 255);
+        background-color: rgb(153, 204, 204);
+        color: #888888;
+    }
+    .site-nav-login-register a {
+        float: none;
+        padding: 0;
+        border-bottom: 0.07em solid rgb(255, 255, 255);
+        color: rgb(255, 204, 153);
+    }
+}
+
+@media screen and (max-width: 600px) {
+    * {
+        font-size: 14px;
+    }
+
+    .site-header {
+        display: block;
+    }
+
+    .trigger {
+        display: block;
+    }
+
+    .site-nav {
+        display: block;
+        padding: 0;
+        width: 100%;
+    }
+
+    .site-nav a {
+        display: block;
+        position: relative;
+        text-align: left;
+        padding: 0;
+        border-bottom: 0.07em solid rgb(255, 255, 255);
+        background-color: rgb(153, 204, 204);
+        color: #888888;
+    }
+    .site-nav-login-register a {
+        float: none;
+        padding: 0;
+        border-bottom: 0.07em solid rgb(255, 255, 255);
+        color: rgb(255, 204, 153);
+    }
+}
