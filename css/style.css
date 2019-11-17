@@ -5,6 +5,8 @@
 
 html, body {
     box-sizing: border-box;
+    font-family: 'Lato', sans-serif;
+    height: 100%;
 }
 
 :before,
@@ -18,7 +20,6 @@ a:hover {
 
 .wrapper {
     margin: 0 auto;
-    font-family: 'Lato', sans-serif;
     font-size: 18px;
     background-color: rgb(255, 255, 255);
 }
@@ -64,7 +65,7 @@ a:hover {
 
 .site-nav-login-register a {
     text-decoration: none;
-    color: rgb(255, 204, 153);
+    color: rgb(253, 234, 138);
     align-items: flex-end;
 }
 
@@ -82,6 +83,7 @@ a:hover {
 
 .page-content {
     display: flex;
+    align-items: center;
 }
 
 .presentation {
@@ -97,24 +99,64 @@ a:hover {
     display: flex;
     align-items: center;
     justify-content: center;
-    padding-bottom: 2em;
 }
 
 .presentation img {
-    width: 2em;
+    width: 1em;
     height: auto;
     padding: 2em;
 }
 
-.cover-image img {
-    width: 100%;
-    margin: 2em;
+.cover-image {
+    padding: 0.5em;
 }
 
-.portfolio-buttion {
-    width: 12em;
+.cover-image img {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: cover;
+}
+
+.home-page-buttons {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.presentation input {
+    width: 15em;
     height: 3em;
+    margin-bottom: 0.5em;
+    border: none;
+    border-radius: 0.2em;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.portfolio-button input {
     background-color: rgb(153, 204, 204);
+    margin-top: 2em;
+}
+
+.project-calculator-button input {
+    background-color: rgb(204, 204, 153);
+}
+
+footer {
+    display: flex;
+    justify-content: space-between;
+    background-color: rgb(52, 102, 103);
+    color: rgb(204, 204, 204);
+    padding: 0.5em;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: calc( 100% - 1em );
+}
+
+footer a {
+    text-decoration: none;
+    color: inherit;
 }
 
 @media screen and (max-width: 900px) {
@@ -150,6 +192,10 @@ a:hover {
         padding: 0;
         border-bottom: 0.07em solid rgb(255, 255, 255);
         color: rgb(255, 204, 153);
+    }
+
+    .presentation {
+        display: block;
     }
 }
 
