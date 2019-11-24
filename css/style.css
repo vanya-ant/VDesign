@@ -27,7 +27,7 @@ a:hover {
 .site-header {
     display: flex;
     background-color: rgb(52, 102, 103);
-    height: 3em;
+    height: 4em;
     align-items: center;
     justify-content: space-between;
 }
@@ -73,32 +73,31 @@ a:hover {
     text-decoration: none;
 }
 
-.site-nav input {
-    display: none;
-}
-
 .site-nav label {
     display: none;
 }
 
 .page-content {
     display: flex;
-    align-items: center;
+    width: 100%;
+    height: calc( 100% - 6em );
 }
 
 .presentation {
     color: rgb(101, 101, 101);
     font-family: Lato serif;
     font-size: 1.5em;
-    width: 50%;
     text-align: center;
     padding: 2em;
+    margin: auto;
+    width: 150vw;
 }
 
 .presentation-heading {
     display: flex;
     align-items: center;
     justify-content: center;
+    margin-bottom: 2em;
 }
 
 .presentation img {
@@ -107,13 +106,17 @@ a:hover {
     padding: 2em;
 }
 
+.presentation p {
+    margin-bottom: 1em;
+}
+
 .cover-image {
     padding: 0.5em;
 }
 
 .cover-image img {
-    max-width: 100%;
-    max-height: 100%;
+    height: 100%;
+    width: 100%;
     object-fit: cover;
 }
 
@@ -124,18 +127,23 @@ a:hover {
 }
 
 .presentation input {
-    width: 15em;
-    height: 3em;
-    margin-bottom: 0.5em;
+    width: 20em;
+    height: 5em;
+    margin-bottom: 1em;
     border: none;
     border-radius: 0.2em;
     text-transform: uppercase;
     font-weight: bold;
+    font-size: 80%;
+}
+
+.presentation input {
+    cursor: pointer;
 }
 
 .portfolio-button input {
     background-color: rgb(153, 204, 204);
-    margin-top: 2em;
+    margin-top: 5em;
 }
 
 .project-calculator-button input {
