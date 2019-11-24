@@ -1,0 +1,236 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+html, body {
+    box-sizing: border-box;
+    font-family: 'Lato', sans-serif;
+    height: 100%;
+}
+
+:before,
+:after {
+    box-sizing: inherit;
+}
+
+a:hover {
+    cursor: pointer;
+}
+
+.wrapper {
+    margin: 0 auto;
+    font-size: 18px;
+    background-color: rgb(255, 255, 255);
+}
+
+.site-header {
+    display: flex;
+    background-color: rgb(52, 102, 103);
+    height: 3em;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo img {
+    width: 7em;
+    height: auto;
+    margin-top: 0.5em;
+    margin-left: 2em;
+    margin-right: 2em;
+}
+
+.site-nav {
+    display: flex;
+    justify-content: space-between;
+}
+
+.site-nav ul {
+    list-style: none;
+}
+
+.trigger {
+    display: flex;
+}
+
+.trigger a {
+    padding-right: 2em;
+    text-decoration: none;
+    color: rgb(204, 204, 204);
+}
+
+.site-nav-login-register {
+    padding-left: 5em;
+}
+
+.site-nav-login-register a {
+    text-decoration: none;
+    color: rgb(253, 234, 138);
+    align-items: flex-end;
+}
+
+.site-title {
+    text-decoration: none;
+}
+
+.site-nav input {
+    display: none;
+}
+
+.site-nav label {
+    display: none;
+}
+
+.page-content {
+    display: flex;
+    align-items: center;
+}
+
+.presentation {
+    color: rgb(101, 101, 101);
+    font-family: Lato serif;
+    font-size: 1.5em;
+    width: 50%;
+    text-align: center;
+    padding: 2em;
+}
+
+.presentation-heading {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.presentation img {
+    width: 1em;
+    height: auto;
+    padding: 2em;
+}
+
+.cover-image {
+    padding: 0.5em;
+}
+
+.cover-image img {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: cover;
+}
+
+.home-page-buttons {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.presentation input {
+    width: 15em;
+    height: 3em;
+    margin-bottom: 0.5em;
+    border: none;
+    border-radius: 0.2em;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.portfolio-button input {
+    background-color: rgb(153, 204, 204);
+    margin-top: 2em;
+}
+
+.project-calculator-button input {
+    background-color: rgb(204, 204, 153);
+}
+
+footer {
+    display: flex;
+    justify-content: space-between;
+    background-color: rgb(52, 102, 103);
+    color: rgb(204, 204, 204);
+    padding: 0.5em;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: calc( 100% - 1em );
+}
+
+footer a {
+    text-decoration: none;
+    color: inherit;
+}
+
+@media screen and (max-width: 900px) {
+    * {
+        font-size: 16px;
+    }
+
+    .site-header {
+        display: block;
+    }
+
+    .trigger {
+        display: block;
+    }
+
+    .site-nav {
+        display: block;
+        padding: 0;
+        width: 100%;
+    }
+
+    .site-nav a {
+        display: block;
+        position: relative;
+        text-align: left;
+        padding: 0;
+        border-bottom: 0.07em solid rgb(255, 255, 255);
+        background-color: rgb(153, 204, 204);
+        color: #888888;
+    }
+    .site-nav-login-register a {
+        float: none;
+        padding: 0;
+        border-bottom: 0.07em solid rgb(255, 255, 255);
+        color: rgb(255, 204, 153);
+    }
+
+    .presentation {
+        display: block;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    * {
+        font-size: 14px;
+    }
+
+    .site-header {
+        display: block;
+    }
+
+    .trigger {
+        display: block;
+    }
+
+    .site-nav {
+        display: block;
+        padding: 0;
+        width: 100%;
+    }
+
+    .site-nav a {
+        display: block;
+        position: relative;
+        text-align: left;
+        padding: 0;
+        border-bottom: 0.07em solid rgb(255, 255, 255);
+        background-color: rgb(153, 204, 204);
+        color: #888888;
+    }
+    .site-nav-login-register a {
+        float: none;
+        padding: 0;
+        border-bottom: 0.07em solid rgb(255, 255, 255);
+        color: rgb(255, 204, 153);
+    }
+}

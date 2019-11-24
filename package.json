@@ -1,0 +1,32 @@
+{
+  "name": "vdesign",
+  "version": "1.0.0",
+  "description": "Front-end-project",
+  "main": "index.js",
+  "dependencies": {
+    "gulp-sass": "^4.0.2"
+  },
+  "devDependencies": {
+    "browser-sync": "^2.26.7",
+    "child_process": "^1.0.2",
+    "gulp": "^4.0.2",
+    "gulp-autoprefixer": "^7.0.1",
+    "gulp-csso": "^4.0.1"
+  },
+  "scripts": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/vanya-ant/VDesign.git"
+  },
+  "keywords": [
+    "Front-end"
+  ],
+  "author": "VanyaD",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/vanya-ant/VDesign/issues"
+  },
+  "homepage": "https://github.com/vanya-ant/VDesign#readme"
+}
