@@ -1,5 +1,5 @@
 .gallery {
-    display: grid;
+    display: inline-grid;
     grid-template-columns: repeat(8, 1fr);
     grid-template-rows: repeat(8, 5vw);
     grid-gap: 1em;

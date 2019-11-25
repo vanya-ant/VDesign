@@ -1,3 +1,10 @@
+html,
+body {
+    min-height: 100%;
+    padding: 0;
+    margin: 0;
+}
+
 a:hover {
     cursor: pointer;
 }
@@ -9,8 +16,8 @@ a:hover {
 
 .page-content {
     display: flex;
-    width: 100%;
-    height: 100%;
+    min-width: 100%;
+    min-height: calc( 100% - 5.2em);
 }
 
 .presentation {
@@ -68,6 +75,10 @@ a:hover {
 .project-calculator-button input {
     background-color: rgb(253, 234, 138);
 
+}
+
+.contacts-map iframe {
+    padding: 0.5em;
 }
 
 @media (min-width: 576px) {
