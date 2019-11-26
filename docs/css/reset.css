@@ -1,14 +1,1 @@
-* {
-    padding: 0;
-    margin: 0;
-}
-
-html, body {
-    box-sizing: border-box;
-    height: calc( 100% - 2em );
-}
-
-:before,
-:after {
-    box-sizing: inherit;
-}
+*{padding:0;margin:0}body,html{box-sizing:border-box;height:calc(100% - 2em)}:after,:before{box-sizing:inherit}
