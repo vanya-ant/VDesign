@@ -4,6 +4,7 @@
   "description": "Front-end-project",
   "main": "index.js",
   "dependencies": {
+    "csso": "^4.0.2",
     "gulp-sass": "^4.0.2",
     "gulp-size": "^3.0.0"
   },
