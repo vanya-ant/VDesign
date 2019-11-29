@@ -1,12 +1,13 @@
 title: VDesign
 email: vanyad@gmail.com
-destination: docs
 description: Interior design portfolio. Awsome interior designs. Furniture design.
+destination: docs
 baseurl: "/VDesign"
 url: ""
-github_username:  vanya-ant
+github_username: vanya-ant
 
 # Build settings
+markdown: kramdown
 plugins:
   - jekyll-feed
 
