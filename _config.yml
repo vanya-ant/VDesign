@@ -22,7 +22,7 @@ title: VDesign
 email: vanyad@gmail.com
 destination: docs
 description: Interior design portfolio. Awsome interior designs. Furniture design.
-baseurl: "" # the subpath of your site, e.g. /blog
+baseurl: "/VDesign" # the subpath of your site, e.g. /blog
 url: "https://v-design.bg" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: no username
 github_username:  vanya-ant
