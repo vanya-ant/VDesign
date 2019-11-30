@@ -10,9 +10,11 @@ a:hover{cursor:pointer}
 .portfolio-button input{background-color:#9cc;margin-top:1em}
 .project-calculator-button input{background-color:#fdea8a}
 .contacts-map iframe{padding:0.5em;}
-.contacts {display: flex;}
-.contact-info{display:flex;flex-direction:column;}
+.contacts{display:flex;color:#656565;}
+.contact-info{display:flex;flex-direction:column;border:0.2em solid lightgrey;}
 .contact-form{display:flex;padding:0.5em;justify-content:center;}
+.contact-form input,textarea{padding:0.6em;margin:0.3em;border:none;border-radius:0.2em;background-color:lightgrey;}
+.contact-form textarea{width:80%;height:4em;}
 .contact-details{padding:0.5em;}
 .icons{list-style-type:none;}
 
