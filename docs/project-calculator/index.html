@@ -27,27 +27,38 @@
 </header>
 <body>
     <main class="page-content">
-         <div class="presentation">
-    <div class="presentation-heading">
-        <img src="/VDesign/images/lilly.png">
-        <h1>Simplicity</h1>
-        <img src="/VDesign/images/lilly.png">
+         <div class="project-calculator">
+    <form>
+    <div class="form-group">
+        <label>Type of property</label>
+        <select></select>
     </div>
-    <h3>Is the true meaning of happiness</h3>
-    <h2>Welcome</h2>
-    <p>To VDesign</p>
-    <p>Please, have a look at our portfolio</p>
-    <div class="home-page-buttons">
-        <div class="portfolio-button">
-            <input type="button" value="Portfolio"/>
-        </div>
-        <div class="project-calculator-button">
-            <input type="button" value="Project Calculator"/>
+    <div class="form-group">
+        <label>Type of project</label>
+        <select></select>
+    </div>
+    <div class="form-group">
+        <label>Enter number of bedrooms</label>
+        <input type="number" placeholder="Number of bedrooms" />
+    </div>
+    <div class="form-group">
+        <label>Enter number of bathrooms</label>
+        <input type="number" placeholder="Number of bathrooms" />
+    </div>
+    <div class="form-group">
+        <label asp-for="HousingArea">Enter housing area /sq.m./</label>
+        <input type="number" step="0.1" placeholder="Housing area" />
+    </div>
+    <div class="text-center">
+        <label>Approximate Project Design Expenses</label>
+        <div class="form-control">
         </div>
     </div>
-</div>
-<div class="cover-image">
-    <img src="/VDesign/images/dan-gold-4HG3Ca3EzWw-unsplash.jpg">
+    <div class="form-group text-center">
+        <button class="project-calculator-button" type="submit">Calculate</button>
+    </div>
+    </form>
+
 </div>
     </main>
 </body>
