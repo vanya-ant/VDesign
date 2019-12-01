@@ -1,4 +1,25 @@
-*{font-family:'Lato',sans-serif;}
+@import 'responsive';
+
+*{
+  font-family:'Lato',sans-serif;
+
+  @include bp(phone) {
+    font-size: var(--font-size-phone);
+  }
+
+  @include bp(mobile) {
+    font-size: var(--font-size-tablet);
+  }
+
+  @include bp(tablet) {
+    font-size: var(--font-size-tablet);
+  }
+
+  @include bp(desktop) {
+    font-size: var(--font-size-desktop);
+  }
+
+}
 
 .presentation-heading {
   font: 1.5em 'Lato', serif;
@@ -6,8 +27,4 @@
 
 blockquote {
   font-style: italic;
-}
-
-blockquote .author {
-  float: right;
 }

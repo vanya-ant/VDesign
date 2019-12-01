@@ -1,0 +1,33 @@
+<div class="project-calculator">
+    <form>
+    <div class="form-group">
+        <label>Type of property</label>
+        <select></select>
+    </div>
+    <div class="form-group">
+        <label>Type of project</label>
+        <select></select>
+    </div>
+    <div class="form-group">
+        <label>Enter number of bedrooms</label>
+        <input type="number" placeholder="Number of bedrooms" />
+    </div>
+    <div class="form-group">
+        <label>Enter number of bathrooms</label>
+        <input type="number" placeholder="Number of bathrooms" />
+    </div>
+    <div class="form-group">
+        <label asp-for="HousingArea">Enter housing area /sq.m./</label>
+        <input type="number" step="0.1" placeholder="Housing area" />
+    </div>
+    <div class="text-center">
+        <label>Approximate Project Design Expenses</label>
+        <div class="form-control">
+        </div>
+    </div>
+    <div class="form-group text-center">
+        <button class="project-calculator-button" type="submit">Calculate</button>
+    </div>
+    </form>
+
+</div>

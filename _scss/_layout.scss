@@ -5,10 +5,10 @@ a:hover{cursor:pointer}
 .presentation{color:#656565;padding:2em;flex-wrap:nowrap;-webkit-box-orient:vertical;-webkit-box-direction:normal;flex-direction:column;-webkit-box-pack:center;justify-content:center;width:100%}
 .presentation,.presentation-heading{display:-webkit-box;display:flex;-webkit-box-align:center;align-items:center}
 .presentation img{width:1em;height:auto;padding:2em}.presentation p{margin-bottom:1em}
-.cover-image img{height:100%;width:100%;-o-object-fit:cover;object-fit:cover}
+.cover-image img{height:100%;width:100%;-o-object-fit:cover;object-fit:cover;}
 .presentation input{width:20em;height:4em;margin-bottom:1em;border:0;border-radius:.2em;text-transform:uppercase;font-weight:700;color:#656565;cursor:pointer}
-.portfolio-button input{background-color:#9cc;margin-top:1em}
-.project-calculator-button input{background-color:#fdea8a}
+.portfolio-button input{background-color:rgba(52, 102, 103, 0.7);margin-top:1em;color:#ccc}
+.project-calculator-button input{background-color:rgb(212,175,55)}
 .contacts{display:flex;color:#656565;}
 .contacts-map iframe{padding:0.5em;height:97%;}
 .contact-info{display:flex;flex-direction:column;margin:0.5em;border:0.2em solid lightgrey;}
@@ -18,8 +18,9 @@ a:hover{cursor:pointer}
 .contact-details{padding:0.5em;}
 .icons{list-style-type:none;}
 .about-description{width:80%;margin:0 auto;color:#656565;}
-.about-description .left {float:left;}
-.about-description .left {float:right;}
+.about-description img {width:30%;height:auto;float:left;padding-bottom:2em;}
+.about-description blockquote {width:30%;border-left: 1px solid #656565;padding: 1.5em;}
+.about-description .author{padding-top: 0.5em;float: right;}
 
 .presentation {
   animation: slide-in-left 1.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;

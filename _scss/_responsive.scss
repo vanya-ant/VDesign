@@ -2,8 +2,8 @@ $breakpoints: (
         'phone': (max-width: 568px),
         'tablet': (max-width: 768px),
         'mobile': (max-width: 1024px),
-        'desktop': (max-width: 1024px),
-        'large': (max-width: 1680px),
+        'desktop': (mix-width: 1025px),
+        'large': (mix-width: 1680px),
 ) !default;
 
 @mixin bp($breakpoint) {
@@ -20,35 +20,5 @@ $breakpoints: (
   @else {
     @warn "Unfortunately, no value could be retrieved from `#{$breakpoint}`. "
             + "Available breakpoints are: #{map-keys($breakpoints)}.";
-  }
-}
-
-@media screen and (min-width: 320px) and (max-width: 568px){
-  body {
-    font-size: var(--font-size-mobile);
-  }
-}
-
-@media screen and (min-width: 568px) and (max-width: 768px){
-  body {
-    font-size: var(--font-size-mobile);
-  }
-}
-
-@media screen and (min-width: 768px) and (max-width: 1024px) {
-  body {
-    font-size: var(--font-size-tablet);
-  }
-}
-
-@media screen and (min-width: 1024px) and (max-width: 1680px) {
-  body {
-    font-size: var(--font-size-tablet);
-  }
-}
-
-@media screen and (min-width: 1680px) {
-  body {
-    font-size: var(--font-size-desktop);
   }
 }

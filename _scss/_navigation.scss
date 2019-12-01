@@ -1,17 +1,17 @@
-.site-header{background-color:#346667;height:3em;-webkit-box-align:center;align-items:center}
+.site-header{background-color:rgba(52, 102, 103, 0.7);height:3em;-webkit-box-align:center;align-items:center}
 .logo img{width:7em;height:auto;margin-top:.5em;margin-left:2em;margin-right:2em}
 .site-header,.site-nav,.trigger,footer{display:-webkit-box;display:flex;-webkit-box-pack:justify;justify-content:space-between}
 .site-nav ul{list-style:none}
 .trigger,footer{-webkit-box-pack:end;justify-content:flex-end}
 .trigger a{padding-right:2em;text-decoration:none;color:#ccc;padding-left:1em;}
 .site-nav-login-register{padding-left:5em}
-.site-nav-login-register a{text-decoration:none;color:#fdea8a}
+.site-nav-login-register a{text-decoration:none;color:rgb(212,175,55)}
 .site-title,footer a{text-decoration:none}
 footer{height:1.3em;-webkit-box-pack:justify;justify-content:space-between;background-color:#346667;color:#ccc;padding:.5em;position:relative;left:0;bottom:0;width:100%;}
 footer a{color:inherit;padding-right:1em}
 
 .border-animation {
-  border-left:2px solid #fdea8a;
+  border-left:2px solid rgb(212,175,55);
   animation: slide-in-top 0.7s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;;
 }
 
