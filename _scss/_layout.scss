@@ -1,7 +1,7 @@
 body,html{min-height:100%;padding:0;margin:0}
 a:hover{cursor:pointer}
-.wrapper{margin:0 auto;background-color:#fff}
-.page-content{display:-webkit-box;display:flex;min-width:100%;min-height:100%;margin-bottom:-1.3em;}
+.wrapper{margin:0 auto;background-color:#fff;}
+.page-content{display:-webkit-box;display:flex;min-width:100%;min-height:100%;}
 .presentation{color:#656565;padding:2em;flex-wrap:nowrap;-webkit-box-orient:vertical;-webkit-box-direction:normal;flex-direction:column;-webkit-box-pack:center;justify-content:center;width:100%}
 .presentation,.presentation-heading{display:-webkit-box;display:flex;-webkit-box-align:center;align-items:center}
 .presentation img{width:1em;height:auto;padding:2em}.presentation p{margin-bottom:1em}
@@ -9,14 +9,17 @@ a:hover{cursor:pointer}
 .presentation input{width:20em;height:4em;margin-bottom:1em;border:0;border-radius:.2em;text-transform:uppercase;font-weight:700;color:#656565;cursor:pointer}
 .portfolio-button input{background-color:#9cc;margin-top:1em}
 .project-calculator-button input{background-color:#fdea8a}
-.contacts-map iframe{padding:0.5em;}
 .contacts{display:flex;color:#656565;}
-.contact-info{display:flex;flex-direction:column;border:0.2em solid lightgrey;}
+.contacts-map iframe{padding:0.5em;height:97%;}
+.contact-info{display:flex;flex-direction:column;margin:0.5em;border:0.2em solid lightgrey;}
 .contact-form{display:flex;padding:0.5em;justify-content:center;}
 .contact-form input,textarea{padding:0.6em;margin:0.3em;border:none;border-radius:0.2em;background-color:lightgrey;}
 .contact-form textarea{width:80%;height:4em;}
 .contact-details{padding:0.5em;}
 .icons{list-style-type:none;}
+.about-description{width:80%;margin:0 auto;color:#656565;}
+.about-description .left {float:left;}
+.about-description .left {float:right;}
 
 .presentation {
   animation: slide-in-left 1.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
