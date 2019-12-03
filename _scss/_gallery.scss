@@ -27,6 +27,22 @@
       -moz-column-count:    1;
       -webkit-column-count: 1;
       column-count:         1;
+
+  display:grid;
+  grid-template-columns:repeat(8,1fr);
+  grid-template-rows:repeat(12,5vw);
+  grid-gap:0.6rem;
+  padding:0.5em;
+  grid-auto-flow:dense;
+
+  @include bp(mobile) {
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows:repeat(3,5vw);
+  }
+
+  @include bp(phone) {
+      grid-template-columns: repeat(3,1fr);
+      grid-template-rows:repeat(3,5vw);
   }
 }
 
