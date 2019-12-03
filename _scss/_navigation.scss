@@ -1,15 +1,73 @@
-.site-header{background-color:rgb(52, 102, 103);height:3em;-webkit-box-align:center;align-items:center;width:100%;}
-.site-header{background-color:rgb(52, 102, 103);height:3em;-webkit-box-align:center;align-items:center}
-.logo img{width:7em;height:auto;margin-top:.5em;margin-left:2em;margin-right:2em}
-.site-header,.site-nav,.trigger,footer{display:-webkit-box;display:flex;-webkit-box-pack:justify;justify-content:space-between}
-.site-nav ul{list-style:none}
-.trigger,footer{-webkit-box-pack:end;justify-content:flex-end}
-.trigger a{padding-right:2em;text-decoration:none;color:#ccc;padding-left:1em;}
-.site-nav-login-register{padding-left:5em}
-.site-nav-login-register a{text-decoration:none;color:rgb(212,175,55)}
-.site-title,footer a{text-decoration:none}
-footer{height:1.3em;-webkit-box-pack:justify;justify-content:space-between;background-color:#346667;color:#ccc;padding:0.5em;position:relative;left:0;bottom:0;width:100%;}
-footer a{color:inherit;padding-right:1em}
+.site-header{
+  background-color:rgb(52, 102, 103);
+  height:3em;
+  align-items:center;
+  width:100%;
+}
+
+.site-header{
+  background-color:rgb(52, 102, 103);
+  height:3em;
+  align-items:center;
+}
+
+.logo img{
+  width:7em;
+  height:auto;
+  margin-top:.5em;
+  margin-left:2em;
+  margin-right:2em;
+}
+
+.site-header,.site-nav,.trigger,footer{
+  display:flex;
+  justify-content:space-between;
+}
+
+.site-nav ul{
+  list-style:none;
+}
+
+.trigger,footer{
+  justify-content:flex-end;
+}
+
+.trigger a{
+  padding-right:2em;
+  text-decoration:none;
+  color:var(--text-primary-color);
+  padding-left:1em;
+}
+
+.site-nav-login-register{
+  padding-left:5em;
+}
+
+.site-nav-login-register a{
+  text-decoration:none;
+  color:var(--golden-text);
+}
+
+.site-title,footer a{
+  text-decoration:none;
+}
+
+footer{
+  height:1.3em;
+  justify-content:space-between;
+  background-color:var(--header-and-footer-color);
+  color:var(--text-primary-color);
+  padding:0.5em;
+  position:relative;
+  left:0;
+  bottom:0;
+  width:100%;
+}
+
+footer a{
+  color:inherit;
+  padding-right:1em;
+}
 
 .border-animation {
   border-left:2px solid rgb(212,175,55);
