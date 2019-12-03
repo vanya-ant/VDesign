@@ -1,7 +1,7 @@
 <div class="gallery">
     {% for image in site.gallery %}
         <figure class="gallery-item-{{ forloop.index }}">
-            <img src="{{ site.baseurl }}{{ image.image-path }}" class="gallery-img" alt="image {{ forloop.index }}" />
+            <img src="{{ site.baseurl }}{{ image.image-path }}" class="gallery-img" alt="image {{ forloop.index }}" onclick="window.open('{{ site.baseurl }}{{ image.image-path }}');" />
         </figure>
     {% endfor  %}
 </div>
