@@ -8,7 +8,7 @@
     <a class="page-link" href="/"><img src="/VDesign/images/logo-2.png"></a>
 </div>
 <nav class="site-nav">
-    <div class="trigger">
+    <div class="trigger" id="top-nav">
         <div class="border-animation"></div>
         <a class="page-link" href="/VDesign/about/">About</a>
         <div class="border-animation"></div>
@@ -22,13 +22,26 @@
             <a class="page-link" href="/VDesign/register/">Register</a>
         </div>
     </div>
+    <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+        <i class="fa fa-bars"></i>
+    </a>
 </nav>
+
+<script>
+    function myFunction() {
+        var x = document.getElementById("top-nav");
+        if (x.className === "trigger") {
+            x.className += " responsive";
+        } else {
+            x.className = "topnav";
+        }
+    }
+</script>
 
 </header>
 <body>
     <main class="page-content">
          <div class="contacts">
-    <div class="contact-image"></div>
     <div class="contacts-map">
         <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2932.3291735910975!2d23.14394451484474!3d42.69675032176585!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40aa996c8be555d7%3A0x77df6dfe28f04e8b!2z0YPQuy4g4oCe0JrRg9C60YPQstC40YbQsOKAnCwgMTMyMCDQkdCw0L3QutGP!5e0!3m2!1sbg!2sbg!4v1574001107044!5m2!1sbg!2sbg" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
     </div>
@@ -44,23 +57,23 @@
                 <ul class="contact-form">
                     <li>
                         <label for="first-name">First Name</label>
-                        <input type="text" id="first-name" placeholder="Enter your first name here">
+                        <input type="text" id="first-name" placeholder="First Name">
                     </li>
                     <li>
                          <label for="last-name">Last Name</label>
-                        <input type="text" id="last-name" placeholder="Enter your last name here">
+                        <input type="text" id="last-name" placeholder="Last Name">
                      </li>
                     <li>
                         <label for="email">Email</label>
-                        <input type="email" id="email" placeholder="Enter your email here">
+                        <input type="email" id="email" placeholder="Email">
                     </li>
                     <li>
                         <label for="phone">Phone</label>
-                        <input type="tel" id="phone" placeholder="Enter your phone here">
+                        <input type="tel" id="phone" placeholder="Phone number">
                     </li>
                     <li>
                         <label for="message">Message</label>
-                        <textarea rows="6" id="message" placeholder="Enter your message here"></textarea>
+                        <textarea rows="6" id="message" placeholder="Message"></textarea>
                     </li>
                     <div class="portfolio-button">
                         <input type="button" value="Submit"/>
