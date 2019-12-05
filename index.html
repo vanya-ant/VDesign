@@ -1,67 +1,26 @@
-<!DOCTYPE html>
-<html lang="en"><head>
-  <meta charset="utf-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1"><!-- Begin Jekyll SEO tag v2.6.1 -->
-<title>VDesign | Interior design portfolio. Awsome interior designs. Furniture design.</title>
-<meta name="generator" content="Jekyll v4.0.0" />
-<meta property="og:title" content="VDesign" />
-<meta property="og:locale" content="en_US" />
-<meta name="description" content="Interior design portfolio. Awsome interior designs. Furniture design." />
-<meta property="og:description" content="Interior design portfolio. Awsome interior designs. Furniture design." />
-<link rel="canonical" href="http://localhost:4000/" />
-<meta property="og:url" content="http://localhost:4000/" />
-<meta property="og:site_name" content="VDesign" />
-<script type="application/ld+json">
-{"@type":"WebSite","headline":"VDesign","url":"http://localhost:4000/","name":"VDesign","description":"Interior design portfolio. Awsome interior designs. Furniture design.","@context":"https://schema.org"}</script>
-<!-- End Jekyll SEO tag -->
-<link rel="stylesheet" href="css/style.css"><link type="application/atom+xml" rel="alternate" href="http://localhost:4000/feed.xml" title="VDesign" />
-    <link href="https://fonts.googleapis.com/css?family=Lato&display=swap" rel="stylesheet">
-</head>
-<body>
-<div class="wrapper">
-    <header class="site-header">
-        <div class=logo>
-            <a class="page-link" href="/home/"><img src="/css/logo-2.png"></a>
-        </div>
-        <nav class="site-nav">
-            <div class="trigger">
-                <a class="page-link" href="/about/">About</a>
-                <a class="page-link" href="/portfolio/">Portfolio</a>
-                <a class="page-link" href="/project-calculator/">Project Calculator</a>
-                <a class="page-link" href="/Contacts/">Contacts</a>
-                <div class="site-nav-login-register">
-                    <a class="page-link" href="/login/">Login</a>
-                    <a class="page-link" href="/register/">Register</a>
-                </div>
-            </div>
-        </nav>
-    </header>
-    <main class="page-content">
-        <div class="presentation">
-            <div class="presentation-heading">
-                <img src="css/lilly.png">
-                <h1>Simplicity</h1>
-                <img src="css/lilly.png">
-            </div>
-            <h3>Is the true meaning of happiness</h3>
-            <h2>Welcome</h2>
-            <p>To VDesign</p>
-            <p>Please, have a look at our portfolio</p>
-                <div class="portfolio-buttion">
-                     <input type="button" placeholder="Portfolio"/>
-                </div>
-                <div class="project-calculator-button">
-                    <input type="button" placeholder="Project Calculator"/>
-                </div>
-        </div>
-        <div class="cover-image">
-            <img src="css/dan-gold-4HG3Ca3EzWw-unsplash.jpg">
-        </div>
-    </main>
-    <footer>
-    </footer>
-</div>
-</body>
+---
+layout: main
+---
 
-</html>
+<div class="presentation">
+    <div class="presentation-heading">
+        <img src="{{ site.baseurl }}/images/lilly.png">
+        <h1>Simplicity</h1>
+        <img src="{{ site.baseurl }}/images/lilly.png">
+    </div>
+    <h3>Is the true meaning of happiness</h3>
+    <h2>Welcome</h2>
+    <p>To VDesign</p>
+    <p>Please, have a look at our portfolio</p>
+    <div class="home-page-buttons">
+        <div class="portfolio-button">
+            <a type="button" href="{{ site.baseurl }}/portfolio/">Portfolio</a>
+        </div>
+        <div class="project-calculator-button">
+            <a type="button" href="{{ site.baseurl }}/project-calculator/">Project Calculator</a>
+        </div>
+    </div>
+</div>
+<div class="cover-image">
+    <img src="{{ site.baseurl }}/images/livingroom1.jpg">
+</div>

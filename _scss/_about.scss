@@ -1,0 +1,25 @@
+@import 'responsive';
+
+.about-description{
+  width:80%;
+  margin:0 auto;
+  color:var(--text-headings-color);
+}
+
+.about-description img {
+  width:30%;
+  height:auto;
+  float:left;
+  padding-bottom:2em;
+}
+
+.about-description blockquote {
+  width:30%;
+  border-left: 1px solid var(--text-headings-color);
+  padding: 1.5em;
+}
+
+.about-description .author{
+  padding-top: 0.5em;
+  float: right;
+}

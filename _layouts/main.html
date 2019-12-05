@@ -1,0 +1,20 @@
+<!doctype html>
+<html>
+<title>{{ site.title }}</title>
+<link rel="stylesheet" href="{{ site.baseurl }}/css/style.css">
+<link href="https://fonts.googleapis.com/css?family=Lato&display=swap" rel="stylesheet">
+<header class="site-header">
+    {% include navigation.html location="header" %}
+</header>
+<body>
+    <main class="page-content">
+         {{ content }}
+    </main>
+</body>
+<footer>
+    {{ site.title }} &copy 2019 All rights reserved
+    <div class="privacy">
+        <a class="page-link" href="{{ site.baseurl }}/privacy/">Privacy Terms</a>
+    </div>
+</footer>
+</html>
