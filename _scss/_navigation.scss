@@ -1,50 +1,69 @@
-.site-nav {
+.site-header{
   background-color:var(--header-and-footer-color);
   height:3em;
-  width:100vw;
-  display:flex;
-  justify-content:space-between;
-  align-items: center;
-}
+  align-items:center;
+  width:100%;
 
-.site-nav > div {
-
-  @include  bp (mobile) {
-    display: block;
-    background-color: var(--header-and-footer-color);
-    position: absolute;
-
-    .page-link a {
-      border-bottom: 0.05em solid var(--golden-text);
-    }
-
-    .border-animation {
-      display: none;
-    }
-  }
-
-  @include bp (phone) {
+  @include bp (mobile)  {
+    height: auto;
     display: block;
   }
+
+  @include bp (phone)  {
+    height: auto;
+    display: block;
+  }
+
 }
 
 .logo img{
   width:7em;
-   margin-top:.5em;
+  height:auto;
+  margin-top:.5em;
   margin-left:2em;
   margin-right:2em;
 }
 
-.nav-item,footer{
+.site-header,.site-nav,footer{
   display:flex;
   justify-content:space-between;
 }
 
-.nav-item,footer{
+.site-nav {
+
+  @include bp (mobile)  {
+    height: auto;
+    display: block;
+    position: relative;
+    padding-bottom: 0.5em;
+    margin-left: 0;
+
+    & .page-link {
+      border-bottom: 0.05em solid var(--golden-text);
+    }
+  }
+
+  @include bp (phone)  {
+    height: auto;
+    display: block;
+    position: relative;
+    padding-bottom: 0.5em;
+
+    & .page-link {
+      border-bottom: 0.05em solid var(--golden-text);
+    }
+  }
+}
+
+.site-nav ul{
+  list-style:none;
+}
+
+footer{
   justify-content:flex-end;
 }
 
-.page-link {
+.site-nav a{
   padding-right:2em;
   text-decoration:none;
   color:var(--text-primary-color);
@@ -53,7 +72,6 @@
 
 .site-nav-login-register{
   padding-left:5em;
-  justify-items: center;
 }
 
 .site-nav-login-register a{
@@ -66,24 +84,18 @@
 }
 
 footer{
-  height:1.3em;
-  justify-content:space-between;
-  background-color:var(--header-and-footer-color);
-  color:var(--text-primary-color);
-  padding:0.5em;
-  position:relative;
-  left:0;
-  bottom:0;
-  width:100vw;
+  justify-content: space-between;
+  background-color: var(--header-and-footer-color);
+  color: var(--text-primary-color);
+  padding: 0.5em;
+  position: relative;
+  left: 0;
+  bottom: 0;
 }
 
 footer a{
   color:inherit;
   padding-right:1em;
-}
-
-footer .privacy {
-  padding-right: 1em;
 }
 
 .border-animation {
@@ -93,10 +105,12 @@ footer .privacy {
 
 @keyframes slide-in-top {
   0% {
+    -webkit-transform: translateY(-1000px);
     transform: translateY(-1000px);
     opacity: 0;
   }
   100% {
+    -webkit-transform: translateY(0);
     transform: translateY(0);
     opacity: 1;
   }
