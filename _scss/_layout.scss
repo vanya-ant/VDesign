@@ -344,7 +344,7 @@ $baseurl: "{{ site.baseurl }}";
 .project-calculator form {
   width: 77%;
   background-color: var(--text-headings-color);
-  background-image: url("/images/caclulator.jpg");
+  background-image: url("#{$baseurl}/images/caclulator.jpg");
   background-size: cover;
   opacity: 0.8;
   object-fit: cover;
