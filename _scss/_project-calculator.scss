@@ -1,8 +1,7 @@
 @import 'responsive';
 
-$baseurl: '{{ site.baseurl }}';
 .project-calculator {
-  background-image: url('../#{$baseurl}/images/calculator.jpg');
+  background-image: url('../images/caclulator.jpg');
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;

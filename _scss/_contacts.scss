@@ -3,6 +3,7 @@
 .contacts {
     display:flex;
     color:var(--text-headings-color);
+    height: inherit;
 
     @include bp(mobile){
         display:block;
@@ -28,6 +29,7 @@
 
 .contacts-map {
     width: 100%;
+    padding: 0.5em;
 }
 
 .contacts-map iframe {
@@ -43,6 +45,7 @@
     margin:0.5em;
     border:0.2em solid var(--text-primary-color);
     width: 60%;
+    height: auto;
 }
 
 .contact-form {
@@ -75,7 +78,7 @@ textarea {
 }
 
 .icons > li {
-    padding: 0.5em;
+    padding: 0.2em;
     font-style: italic;
 }
 

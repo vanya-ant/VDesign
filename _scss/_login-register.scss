@@ -1,0 +1,29 @@
+.login-form, .register-form {
+  width: 80%;
+  height: auto;
+  border: 0.2em solid var(--text-primary-color);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0.5em;
+  margin: 1.4em 0.5em;
+  position: absolute;
+}
+
+.logo-form {
+  position: relative;
+  z-index: 10;
+  font-weight: 700;
+  font-size: 2em;
+  text-shadow: 0 0 0.2em var(--text-headings-color);
+}
+
+.form-field {
+  display: flex;
+  justify-content: space-between;
+  padding: 0.5em;
+}
+
+.form-field > div {
+  padding: 0.4em;
+}
