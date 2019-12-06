@@ -27,3 +27,7 @@ exclude:
   - package.json
   - package-lock.json
   - gulpfile.js
+<<<<<<< HEAD
+  - .idea/
+=======
+>>>>>>> a813e63cd0c6b8b402bfa06f3a55767107ca30e7

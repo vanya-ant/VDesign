@@ -61,8 +61,6 @@
 }
 
 .home-page-buttons a {
-  width: 25em;
-  height: 5em;
   padding: 0.7em;
   margin-bottom: 1em;
   border: 0;
@@ -84,10 +82,7 @@
   color: var(--text-headings-color);
 }
 
-.portfolio-button {
-  margin-top: 2em;
-}
-
+.portfolio-button ,
 .project-calculator-button {
   margin-top: 2em;
 }

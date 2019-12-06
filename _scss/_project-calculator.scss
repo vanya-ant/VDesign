@@ -1,8 +1,7 @@
 @import 'responsive';
 
-$baseurl: '{{ site.baseurl }}';
 .project-calculator {
-  background-image: url('../#{$baseurl}/images/calculator.jpg');
+  background-image: url('/images/caclulator.jpg');
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
@@ -25,11 +24,15 @@ $baseurl: '{{ site.baseurl }}';
   justify-content: space-between;
 }
 
-.form-group select, input{
-  width: 40%;
+.form-group {
   background-color: var(--text-primary-color);
-  border: none;
-  border-radius: 0.2em;
+  opacity: 0.8;
+}
+
+.form-group select, input, textarea {
+  width: 40%;
+  background-color: white;
+  border: 0.2em solid var(--golden-text);
   padding: 0.3em;
   color: var(--text-headings-color);
 }
