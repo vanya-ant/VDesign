@@ -5,3 +5,9 @@
   padding-right: 2rem;
 }
 
+.page-content {
+  display:flex;
+  min-width:100%;
+  min-height:calc(100% - 1.2em);
+  justify-content:center;
+}
