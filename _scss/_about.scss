@@ -1,5 +1,3 @@
-@import 'responsive';
-
 .about-description{
   width:80%;
   margin:0 auto;
@@ -16,7 +14,7 @@
 .about-description blockquote {
   width:30%;
   border-left: 1px solid var(--text-headings-color);
-  padding: 1.5em;
+  margin: 1.5em;
 }
 
 .about-description .author{

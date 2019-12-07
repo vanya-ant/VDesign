@@ -13,7 +13,6 @@
     height: auto;
     display: block;
   }
-
 }
 
 .logo img{
@@ -55,35 +54,35 @@
   }
 }
 
-.site-nav ul{
+.site-nav ul {
   list-style:none;
 }
 
-footer{
+footer {
   justify-content:flex-end;
 }
 
-.site-nav a{
+.site-nav a {
   padding-right:2em;
   text-decoration:none;
   color:var(--text-primary-color);
   padding-left:1em;
 }
 
-.site-nav-login-register{
+.site-nav-login-register {
   padding-left:5em;
 }
 
-.site-nav-login-register a{
+.site-nav-login-register a {
   text-decoration:none;
   color:var(--golden-text);
 }
 
-.site-title,footer a{
+.site-title,footer a {
   text-decoration:none;
 }
 
-footer{
+footer {
   justify-content: space-between;
   background-color: var(--header-and-footer-color);
   color: var(--text-primary-color);
@@ -93,7 +92,7 @@ footer{
   bottom: 0;
 }
 
-footer a{
+footer a {
   color:inherit;
   padding-right:1em;
 }
