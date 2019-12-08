@@ -21,10 +21,6 @@
 
   @include bp (phone) {
     display: block;
-
-   .about-wrapper > div {
-     margin: 0;
-   }
   }
 
   @include bp (tablet) {
@@ -39,7 +35,6 @@
 .about-wrapper > div {
   margin: 0;
   color: var(--text-headings-color);
-  padding: 2em;
 }
 
 .one,
@@ -47,18 +42,19 @@
 .three,
 .four {
   background-color: var(--text-primary-color);
+  padding: 1.5em;
 }
 
 .about-wrapper img {
   width: 100%;
-  height: 80%;
+  height: 100%;
+  object-fit: cover;
   background-color: white;
   align-self: center;
-  //box-shadow: 0.5em 0.5em 0.5em rgba(var(--text-primary-color) 0.8);
 }
 
 .about-wrapper blockquote {
-  width:30%;
+  width:50%;
   border-left: 1px solid var(--text-headings-color);
   margin: 1.5em;
 }
