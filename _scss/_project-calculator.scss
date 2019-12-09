@@ -5,6 +5,8 @@
   flex-direction: column;
   align-items: center;
   width: 100%;
+  background-color: var(--text-headings-color);
+  background-blend-mode: hue;
 
   @include bp(mobile) {
     display: block;
