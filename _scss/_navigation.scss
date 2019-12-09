@@ -11,9 +11,18 @@
     display: block;
   }
 
+  @include bp (tablet)  {
+    height: auto;
+    display: block;
+  }
+
   @include bp (phone)  {
     height: auto;
     display: block;
+
+    .site-nav-login-register {
+      padding-left: 0;
+    }
   }
 }
 
@@ -85,6 +94,7 @@ footer {
 }
 
 footer {
+  display: flex;
   justify-content: space-between;
   background-color: var(--header-and-footer-color);
   color: var(--text-primary-color);
@@ -92,6 +102,15 @@ footer {
   position: relative;
   left: 0;
   bottom: 0;
+
+  @include bp (mobile)  {
+    display: block;
+    text-align: center;
+  }
+
+  @include bp (phone)  {
+    display: block;
+  }
 }
 
 footer a {

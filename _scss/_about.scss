@@ -26,10 +26,6 @@
   @include bp (tablet) {
     display: block;
   }
-
-  @include bp (mobile) {
-    display: block;
-  }
 }
 
 .about-wrapper > div {
