@@ -13,6 +13,7 @@ plugins:
 
 collections:
   - gallery
+  - projects
 
 exclude:
   - docs
