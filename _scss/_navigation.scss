@@ -37,7 +37,6 @@
 .site-header,.site-nav,footer{
   display:flex;
   justify-content:space-between;
-  align-items: center;
 }
 
 .site-nav {
@@ -68,6 +67,10 @@
 
 .site-nav ul {
   list-style:none;
+}
+
+.page-link {
+  align-self: center;
 }
 
 footer {
