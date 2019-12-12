@@ -1,14 +1,15 @@
 ---
 layout: main
-title: Projects
-permalink: /projects/
+title: Projects portfolio
+permalink: /projects-portfolio/
 ---
-<div class="projects">
+<div class="projects-portfolio">
     <ul>
         {% for project in site.gallery %}
         <li>
-              <a href="#">
+              <a href="{{ project.url | prepend: site.baseurl }}">
                   <h1>{{ project.title }}</h1>
+                  <p>{{ project.year }}</p>
                   <p>{{ project.description}}</p>
               </a>
                 <img src="{{ site.baseurl }}{{ project.image-path }}" class="gallery-img" alt="image {{ forloop.index }}" onclick="window.open('{{ site.baseurl }}{{ project.image-path }}');" />
@@ -16,6 +17,3 @@ permalink: /projects/
         {% endfor %}
     </ul>
 </div>
-
-
-<a href="{{ site.baseurl }}project{{ forloop.index }}"></a>
