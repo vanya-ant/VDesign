@@ -23,6 +23,11 @@
         display:block;
         margin: 0 auto;
 
+        .contacts-map iframe {
+            width: 95%;
+            margin: 0 auto;
+        }
+
         .contact-info {
             margin-left: auto;
             margin-right: auto;

@@ -7,11 +7,15 @@ permalink: /projects/
     <ul>
         {% for project in site.gallery %}
         <li>
-            <h1>{{ project.title }}</h1>
-            <p>{{ project.description}}</p>
-            <a href="{{ site.baseurl }}project{{ forloop.index }}">Read more</a>
-            <img src="{{ site.baseurl }}{{ project.image-path }}" class="gallery-img" alt="image {{ forloop.index }}" onclick="window.open('{{ site.baseurl }}{{ project.image-path }}');" />
+              <a href="#">
+                  <h1>{{ project.title }}</h1>
+                  <p>{{ project.description}}</p>
+              </a>
+                <img src="{{ site.baseurl }}{{ project.image-path }}" class="gallery-img" alt="image {{ forloop.index }}" onclick="window.open('{{ site.baseurl }}{{ project.image-path }}');" />
         </li>
         {% endfor %}
     </ul>
 </div>
+
+
+<a href="{{ site.baseurl }}project{{ forloop.index }}"></a>
