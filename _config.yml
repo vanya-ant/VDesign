@@ -27,3 +27,5 @@ exclude:
   - package.json
   - package-lock.json
   - gulpfile.js
+  - .jekyl-cache/
+  - .idea/
