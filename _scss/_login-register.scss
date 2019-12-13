@@ -74,13 +74,12 @@
   opacity: 0.7;
 }
 
-.checkbox-password-remember input {
-  transform: translateX(4em);
-  color: var(--text-primary-color);
+.checkbox-password-remember {
+  display: flex;
+
+  @include bp (phone) {
+    display: block;
+    width: 60%;
+  }
 }
 
-.checkbox-password-remember label {
-  color: var(--text-primary-color);
-  padding-left: 4em;
-  font-size: 0.3em;
-}
