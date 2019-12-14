@@ -16,7 +16,7 @@
     <div class="border-animation"></div>
         <a class="page-link" href="/VDesign/about/">About</a>
     <div class="border-animation"></div>
-        <a class="page-link active" href="/VDesign/portfolio/">Portfolio</a>
+        <a class="page-link" href="/VDesign/portfolio/">Portfolio</a>
     <div class="border-animation"></div>
     <a class="page-link" href="/VDesign/projects-portfolio/">Projects</a>
     <div class="border-animation"></div>
@@ -28,17 +28,7 @@
             <a class="page-link" href="/VDesign/register/">Register</a>
     </div>
 </nav>
-<script>
-    var nav = document.getElementById('nav');
-    var links = nav.getElementsByClassName('page-link');
-    for (var i=0; i < links.length; i++){
-        links[i].addEventListener('click', function ()  {
-            var current = document.getElementsByClassName('active');
-            current[0].className = current[0].className.replace(' active', '');
-            this.className += ' active';
-        });
-    }
-</script>
+
 </header>
 <body>
     <main class="page-content">

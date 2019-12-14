@@ -90,7 +90,6 @@
   transition: all 1s ease-in-out;
 
   &:hover {
-    transform: scale(1.05);
     filter: alpha(opacity=50);
     opacity: 1;
   }

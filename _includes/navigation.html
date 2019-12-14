@@ -5,7 +5,7 @@
     <div class="border-animation"></div>
         <a class="page-link" href="{{ site.baseurl }}/about/">About</a>
     <div class="border-animation"></div>
-        <a class="page-link active" href="{{ site.baseurl }}/portfolio/">Portfolio</a>
+        <a class="page-link" href="{{ site.baseurl }}/portfolio/">Portfolio</a>
     <div class="border-animation"></div>
     <a class="page-link" href="{{ site.baseurl }}/projects-portfolio/">Projects</a>
     <div class="border-animation"></div>
@@ -17,14 +17,3 @@
             <a class="page-link" href="{{ site.baseurl }}/register/">Register</a>
     </div>
 </nav>
-<script>
-    var nav = document.getElementById('nav');
-    var links = nav.getElementsByClassName('page-link');
-    for (var i=0; i < links.length; i++){
-        links[i].addEventListener('click', function ()  {
-            var current = document.getElementsByClassName('active');
-            current[0].className = current[0].className.replace(' active', '');
-            this.className += ' active';
-        });
-    }
-</script>
