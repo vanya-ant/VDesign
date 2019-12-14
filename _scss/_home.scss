@@ -87,10 +87,10 @@
   object-fit:cover;
   background-color:var(--header-and-footer-color);
   opacity:0.8;
-  transition: opacity 1s ease-in-out;
+  transition: all 1s ease-in-out;
 
   &:hover {
-    zoom: 1;
+    transform: scale(1.05);
     filter: alpha(opacity=50);
     opacity: 1;
   }
