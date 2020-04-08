@@ -73,7 +73,11 @@
   align-self: center;
 }
 
-.site-nav .page-link .active, .page-link:hover {
+.site-nav .page-link:hover {
+  color: var(--golden-text);
+}
+
+.active a{
   color: var(--golden-text);
 }
 
@@ -86,10 +90,11 @@ footer {
 }
 
 .site-nav a {
-  padding-right:2em;
   text-decoration:none;
   color:var(--text-primary-color);
-  padding-left:1em;
+  justify-items: center;
+  padding-left: 1em;
+  padding-right: 1em;
 }
 
 .site-nav-login-register {
@@ -131,18 +136,16 @@ footer a {
 }
 
 .border-animation {
-  border-left:2px solid rgb(212,175,55);
+  border-left:2px solid var(--golden-text);
   animation: slide-in-top 0.7s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;;
 }
 
 @keyframes slide-in-top {
   0% {
-    -webkit-transform: translateY(-1000px);
     transform: translateY(-1000px);
     opacity: 0;
   }
   100% {
-    -webkit-transform: translateY(0);
     transform: translateY(0);
     opacity: 1;
   }
